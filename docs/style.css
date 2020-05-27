@@ -15,7 +15,7 @@ max-width: 60%;
 margin: auto;
 height: 60vh;
 overflow-x: hidden;
-  overflow-y: scroll;
+overflow-y: scroll;
 }
 
 .message{
