@@ -8,25 +8,30 @@
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <link href="style.css" rel="stylesheet">
     <script defer src="http://werealtimechatapp.herokuapp.com/socket.io/socket.io.js"></script>
-    <script src="client.js"></script>
-
-</head>
-
+    <script defer src="client.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <body>
 
-    <img class="logo" src="chat.png">
+    <img src="chatter.png" alt="chatter app" style="margin-left: 35%;height: 20%;">
     <div class="container">
+        <img  class="user-profile" src="img/pp.png" alt="user profile"><br>
+        
+         <p id="user_name" style="margin-left:7%;">Shaharukh</p>
 
         <div class="message left">Shahrukh:how are you</div>
  
-        <div class="message right">Farid: I am great what about you</div>
+        <div class="message right">
+            Farid: I am great what about you
+         </div>
 
+    
+        
     </div>
-
     <div class="send">
         <form action="" id="send-container">
-            <input type="text" name="messageInp" id="messageInp">
-            <button class="btn" type="submit">Send</button>
+            <input type="text" name="messageInp" placeholder="Type a Message" required id="messageInp">
+            <button type="submit" style="width:0px;"><i class="fa fa-paper-plane" style="font-size:45px;width:35px" aria-hidden="true"></i>
+            </button>
         </form>
     </div>
 
